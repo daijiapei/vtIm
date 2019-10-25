@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{7c509d0e-7792-4294-ba6d-b5c19b4c3b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\LOG">
+      <UniqueIdentifier>{70b26624-f768-4384-92e2-2b0c59698737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\INI">
+      <UniqueIdentifier>{997424ec-2900-4325-b082-95c2ba266ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Json">
+      <UniqueIdentifier>{bc8ddb7d-5239-4e74-bde4-1093bb3d67be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dispose">
+      <UniqueIdentifier>{c6a4f5b4-77c7-4a0b-9d12-2d545f1a3749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{652eff8c-312f-47bd-a3df-4a2b6ee091ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Data">
+      <UniqueIdentifier>{d863c55d-e5cc-43a7-aa10-60e7e1273c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Encode">
+      <UniqueIdentifier>{990e45b5-6ddd-4137-a9b8-0ab3594e70a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\IOCP">
+      <UniqueIdentifier>{fbf1c764-fa4e-4f30-884e-cb3f6c685a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Thread">
+      <UniqueIdentifier>{461310c7-e4b8-4550-b5e9-e82e4b443728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{59269bef-7b2b-4459-8ec4-67ad51ca9587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{c5ef0387-eb95-4dc8-a0d9-19167e8e1300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\http">
+      <UniqueIdentifier>{7af6b733-185f-4288-a3e2-3ca8df444e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Image">
+      <UniqueIdentifier>{9a6d5d6f-be06-4fb3-b85a-7f129d304d8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleProxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\log\log.cpp">
+      <Filter>Utils\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\ini\inirw.c">
+      <Filter>Utils\INI</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatClient.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\jsoncpp\json_reader.cpp">
+      <Filter>Utils\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\jsoncpp\json_value.cpp">
+      <Filter>Utils\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\jsoncpp\json_writer.cpp">
+      <Filter>Utils\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\Encode\Encode.cpp">
+      <Filter>Utils\Encode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\fileio.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\iocpbase.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\iocpdef.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\iocptimer.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\iocptree.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\privatetimer.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\socketbuffer.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\socketutils.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\timeheap.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\udpsocket.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\thread\ThreadPool.c">
+      <Filter>Utils\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\Data\ResourceManager.cpp">
+      <Filter>Utils\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\Data\sqlite3.c">
+      <Filter>Utils\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\LogoSocket.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\BuildMasterBytes.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\http\httputils.c">
+      <Filter>Utils\http</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\MasterResponse.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\MasterRequest.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\FrameWnd.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\LoginDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ImMessageBox.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\demo.cpp">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\iocp\iocpudp.c">
+      <Filter>Utils\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\thread\domo.cpp">
+      <Filter>Utils\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\image\QR_Encode.cpp">
+      <Filter>Utils\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\image\stb_image.c">
+      <Filter>Utils\Image</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HandleProxy.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\log\log.hpp">
+      <Filter>Utils\LOG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\ini\inirw.h">
+      <Filter>Utils\INI</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatClient.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\autolink.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\config.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\features.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\forwards.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\json.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\json_batchallocator.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\reader.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\value.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\jsoncpp\writer.h">
+      <Filter>Utils\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\Encode\Encode.h">
+      <Filter>Utils\Encode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\fileio.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\iocpbase.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\iocpdef.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\iocpenv.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\iocptimer.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\iocptree.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\privatetimer.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\socketbuffer.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\socketutils.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\timeheap.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\udpsocket.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\thread\ThreadPool.h">
+      <Filter>Utils\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\Data\ResourceManager.h">
+      <Filter>Utils\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\Data\sqlite3.h">
+      <Filter>Utils\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="vtdef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="state.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\LogoSocket.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\BuildMasterBytes.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\sockdef.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\http\httputils.h">
+      <Filter>Utils\http</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\MasterResponse.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\MasterRequest.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\BaseView.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\FrameWnd.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\LoginDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ImMessageBox.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\iocp\iocpudp.h">
+      <Filter>Utils\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\image\QR_Encode.h">
+      <Filter>Utils\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utils\image\stb_image.h">
+      <Filter>Utils\Image</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Utils\jsoncpp\json_internalarray.inl">
+      <Filter>Utils\Json</Filter>
+    </None>
+    <None Include="..\Utils\jsoncpp\json_internalmap.inl">
+      <Filter>Utils\Json</Filter>
+    </None>
+    <None Include="..\Utils\jsoncpp\json_valueiterator.inl">
+      <Filter>Utils\Json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\res\skin\FrameWnd.xml">
+      <Filter>Res</Filter>
+    </Xml>
+    <Xml Include="..\res\skin\LoginDlg.xml">
+      <Filter>Res</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

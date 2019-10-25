@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DCA97B0A-1127-4C43-BC6E-279DC7950EDE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vtIM</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../Utils;../include;../MYUI;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Utils\Data\ResourceManager.cpp" />
+    <ClCompile Include="..\Utils\Data\sqlite3.c" />
+    <ClCompile Include="..\Utils\Encode\Encode.cpp" />
+    <ClCompile Include="..\Utils\http\httputils.c" />
+    <ClCompile Include="..\Utils\image\QR_Encode.cpp" />
+    <ClCompile Include="..\Utils\image\stb_image.c" />
+    <ClCompile Include="..\Utils\ini\inirw.c" />
+    <ClCompile Include="..\Utils\iocp\demo.cpp" />
+    <ClCompile Include="..\Utils\iocp\fileio.c" />
+    <ClCompile Include="..\Utils\iocp\iocpbase.c" />
+    <ClCompile Include="..\Utils\iocp\iocpdef.c" />
+    <ClCompile Include="..\Utils\iocp\iocptimer.c" />
+    <ClCompile Include="..\Utils\iocp\iocptree.c" />
+    <ClCompile Include="..\Utils\iocp\iocpudp.c" />
+    <ClCompile Include="..\Utils\iocp\privatetimer.c" />
+    <ClCompile Include="..\Utils\iocp\socketbuffer.c" />
+    <ClCompile Include="..\Utils\iocp\socketutils.c" />
+    <ClCompile Include="..\Utils\iocp\timeheap.c" />
+    <ClCompile Include="..\Utils\iocp\udpsocket.c" />
+    <ClCompile Include="..\Utils\jsoncpp\json_reader.cpp" />
+    <ClCompile Include="..\Utils\jsoncpp\json_value.cpp" />
+    <ClCompile Include="..\Utils\jsoncpp\json_writer.cpp" />
+    <ClCompile Include="..\Utils\log\log.cpp" />
+    <ClCompile Include="..\Utils\thread\domo.cpp" />
+    <ClCompile Include="..\Utils\thread\ThreadPool.c" />
+    <ClCompile Include="ChatClient.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Dialog\FrameWnd.cpp" />
+    <ClCompile Include="Dialog\ImMessageBox.cpp" />
+    <ClCompile Include="Dialog\LoginDlg.cpp" />
+    <ClCompile Include="HandleProxy.cpp" />
+    <ClCompile Include="NetWork\BuildMasterBytes.cpp" />
+    <ClCompile Include="NetWork\LogoSocket.cpp" />
+    <ClCompile Include="NetWork\MasterRequest.cpp" />
+    <ClCompile Include="NetWork\MasterResponse.cpp" />
+    <ClCompile Include="state.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Utils\Data\ResourceManager.h" />
+    <ClInclude Include="..\Utils\Data\sqlite3.h" />
+    <ClInclude Include="..\Utils\Encode\Encode.h" />
+    <ClInclude Include="..\Utils\http\httputils.h" />
+    <ClInclude Include="..\Utils\image\QR_Encode.h" />
+    <ClInclude Include="..\Utils\image\stb_image.h" />
+    <ClInclude Include="..\Utils\ini\inirw.h" />
+    <ClInclude Include="..\Utils\iocp\fileio.h" />
+    <ClInclude Include="..\Utils\iocp\iocpbase.h" />
+    <ClInclude Include="..\Utils\iocp\iocpdef.h" />
+    <ClInclude Include="..\Utils\iocp\iocpenv.h" />
+    <ClInclude Include="..\Utils\iocp\iocptimer.h" />
+    <ClInclude Include="..\Utils\iocp\iocptree.h" />
+    <ClInclude Include="..\Utils\iocp\iocpudp.h" />
+    <ClInclude Include="..\Utils\iocp\privatetimer.h" />
+    <ClInclude Include="..\Utils\iocp\socketbuffer.h" />
+    <ClInclude Include="..\Utils\iocp\socketutils.h" />
+    <ClInclude Include="..\Utils\iocp\timeheap.h" />
+    <ClInclude Include="..\Utils\iocp\udpsocket.h" />
+    <ClInclude Include="..\Utils\jsoncpp\autolink.h" />
+    <ClInclude Include="..\Utils\jsoncpp\config.h" />
+    <ClInclude Include="..\Utils\jsoncpp\features.h" />
+    <ClInclude Include="..\Utils\jsoncpp\forwards.h" />
+    <ClInclude Include="..\Utils\jsoncpp\json.h" />
+    <ClInclude Include="..\Utils\jsoncpp\json_batchallocator.h" />
+    <ClInclude Include="..\Utils\jsoncpp\reader.h" />
+    <ClInclude Include="..\Utils\jsoncpp\value.h" />
+    <ClInclude Include="..\Utils\jsoncpp\writer.h" />
+    <ClInclude Include="..\Utils\log\log.hpp" />
+    <ClInclude Include="..\Utils\thread\ThreadPool.h" />
+    <ClInclude Include="ChatClient.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Dialog\BaseView.h" />
+    <ClInclude Include="Dialog\FrameWnd.h" />
+    <ClInclude Include="Dialog\ImMessageBox.h" />
+    <ClInclude Include="Dialog\LoginDlg.h" />
+    <ClInclude Include="HandleProxy.h" />
+    <ClInclude Include="NetWork\BuildMasterBytes.h" />
+    <ClInclude Include="NetWork\LogoSocket.h" />
+    <ClInclude Include="NetWork\MasterRequest.h" />
+    <ClInclude Include="NetWork\MasterResponse.h" />
+    <ClInclude Include="NetWork\sockdef.h" />
+    <ClInclude Include="state.h" />
+    <ClInclude Include="vtdef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Utils\jsoncpp\json_internalarray.inl" />
+    <None Include="..\Utils\jsoncpp\json_internalmap.inl" />
+    <None Include="..\Utils\jsoncpp\json_valueiterator.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\res\skin\FrameWnd.xml" />
+    <Xml Include="..\res\skin\LoginDlg.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

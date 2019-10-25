@@ -1,0 +1,21 @@
+﻿Build started 2019-10-14 21:55:27.
+     1>Project "E:\C++训练营\即时通信项目\vtIM\vtIM\vtIM.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Utils\iocp\demo.cpp ..\Utils\thread\domo.cpp ChatClient.cpp HandleProxy.cpp NetWork\MasterRequest.cpp WinMain.cpp
+         WinMain.cpp
+     1>e:\c++训练营\即时通信项目\vtim\vtim\handleproxy.h(5): fatal error C1083: Cannot open include file: 'iocp/iocpsocket.h': No such file or directory
+         MasterRequest.cpp
+     1>e:\c++训练营\即时通信项目\vtim\vtim\network\masterrequest.h(5): fatal error C1083: Cannot open include file: 'iocp/iocpsocket.h': No such file or directory
+         HandleProxy.cpp
+     1>e:\c++训练营\即时通信项目\vtim\vtim\handleproxy.h(5): fatal error C1083: Cannot open include file: 'iocp/iocpsocket.h': No such file or directory
+         ChatClient.cpp
+     1>e:\c++训练营\即时通信项目\vtim\vtim\chatclient.h(5): fatal error C1083: Cannot open include file: 'iocp/iocpsocket.h': No such file or directory
+         domo.cpp
+     1>e:\c++训练营\即时通信项目\vtim\utils\thread\domo.cpp(4): warning C4081: expected 'newline'; found ';'
+         demo.cpp
+         Generating Code...
+     1>Done Building Project "E:\C++训练营\即时通信项目\vtIM\vtIM\vtIM.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.04
